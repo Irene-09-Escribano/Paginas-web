@@ -1,0 +1,9 @@
+textarea{
+    overflow-y: scroll;
+}
+.preu{
+    width: 10%;
+}
+fieldset{
+    margin-right: -50px;
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    
+    <meta charset="utf-8">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="style.css">
+    <title>Avaluació HTML 4</title>
+  </head>
+    <body>
+    <h3><b>Información sobre el producto</b></h3>
+      <fieldset>
+        <legend>Datos básicos</legend>
+        <td rowspan="60">
+            Nombre 
+            <br>
+            <input type="text" id="nom" name="nom">
+            <br><br>
+            Descripción 
+            <textarea name="Descri" rows="5" cols="35"></textarea>
+            <br><br>
+            <form action="puja.php" method="post" enctype="multipart/form-data">
+            Foto <input type="file" name="fileToUpload" id="fileToUpload">
+            <br><br>
+            <input type="checkbox" name="cont"> Añadir contador de visitas
+        </form>
+        </td>
+      </fieldset>
+      <br>
+  <fieldset>
+   <legend>Datos económicos</legend>
+    <td rowspan="40">
+        Precio <input type="number" class="preu" id="preu" name="preu"> €
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impuestos
+        <select name="poblacion">
+            <option>4%</option>     
+            <option>7%</option>        
+            <option>16%</option>    
+            <option>15%</option>  
+        </select>
+        <br><br>
+        Promoción 
+        <br>
+        <input type="radio" id=nin name="promo" value="nin">
+        <label for="nin">Ninguno</label>
+        <br>
+        <input type="radio" id="tg" name="promo" value="tg">
+        <label for="tg">Transporte gratuito</label>
+        <br>
+        <input type="radio" id="des" name="promo" value="des">
+        <label for="des">Descuento 5%</label>
+    </td>
+  </fieldset>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
